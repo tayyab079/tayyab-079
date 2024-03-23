@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: LightGray;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      border: none;
+    }
+
+    th, td {
+      border: none;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0; /* Light Gray */
+      color: DimGrey;
+    }
+
+    tr:hover {
+      background-color: LightBlue;
+    }
+
+    .edit-btn {
+      background-color: DarkCyan;
+      color: White;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .delete-btn {
+      background-color: Tomato;
+      color: White;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .status-btn {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 120px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .not-completed { background-color: Tomato; color: White; }
+    .completed { background-color: SeaGreen; color: White; }
+    .processing { background-color: DodgerBlue; color: White; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="background-color: #e0e0e0;">Invoice</th>
+        <th style="background-color: #e0e0e0;">Customer Name</th>
+        <th style="background-color: #e0e0e0;">Date</th>
+        <th style="background-color: #e0e0e0;">Status</th>
+        <th style="background-color: #e0e0e0;">Amount</th>
+        <th style="background-color: #e0e0e0;">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Sana</td>
+        <td>2024-03-11</td>
+        <td><button class="status-btn not-completed">Pending</button></td>
+        <td>$100.00</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Sara</td>
+        <td>2024-03-12</td>
+        <td><button class="status-btn completed">Completed</button></td>
+        <td>$75.50</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>John</td>
+        <td>2024-03-13</td>
+        <td><button class="status-btn processing">Processing</button></td>
+        <td>$50.25</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Bruce</td>
+        <td>2024-03-14</td>
+        <td><button class="status-btn completed">Completed</button></td>
+        <td>$120.75</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Mary</td>
+        <td>2024-03-15</td>
+        <td><button class="status-btn not-completed">Pending</button></td>
+        <td>$90.20</td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
