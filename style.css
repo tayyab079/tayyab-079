@@ -1,0 +1,59 @@
+body {
+    background-image: url(pic.jpg);
+    position: relative;
+    background-size: cover;
+    color: white;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.form {
+    border: 1px solid rgb(47, 36, 97);
+    border-radius: 5px;
+    width: 350px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+div.name {
+    margin-bottom: 10px;
+}
+
+.input {
+    margin-bottom: 20px; /* Add space between input tabs */
+    position: relative; /* Ensure relative positioning for absolute positioning of icons */
+}
+
+input.user, input.pass {
+    background-color: transparent;
+    border: 1px solid rgb(25, 19, 82);
+    border-radius: 20px;
+    width: 180px; 
+    padding: 5px;
+    position: relative;
+}
+
+div.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+/* Tube-like button style */
+.tube {
+    background-color: #007bff;
+    color: white;
+    border: 1px solid #007bff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tube:hover {
+    background-color: #0056b3;
+}
